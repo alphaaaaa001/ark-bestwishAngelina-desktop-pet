@@ -1,0 +1,21 @@
+{
+  "name": "ark-anglina-desktop-pet",
+  "version": "1.0.0",
+  "description": "安洁莉娜桌面宠物：基于 Electron + webm 的透明置顶桌宠（无需 GPU）",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "He Linshuang & Chloe (CC)",
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "desktop-pet",
+    "桌宠",
+    "akf",
+    "spine"
+  ],
+  "devDependencies": {
+    "electron": "31.7.7"
+  }
+}

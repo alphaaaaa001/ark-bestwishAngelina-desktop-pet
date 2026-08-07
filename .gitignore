@@ -1,0 +1,10 @@
+# 依赖（体积大，勿上传）
+node_modules/
+
+# 调试截图
+capture*.png
+
+# 日志 / 系统文件
+*.log
+.DS_Store
+Thumbs.db
