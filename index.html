@@ -17,7 +17,7 @@
       position: absolute;
       left: 0; top: 0;
       /* 尺寸和位置由 JS 按人物 bbox 计算：object-fit:fill 把画布填进 video 元素，
-         再定位让 bbox 区域恰好居中在窗口，stage 的 overflow:hidden 裁掉其余部分 */
+         再定位让 bbox 区域对齐到身体区（顶部留气泡楼层），stage 的 overflow:hidden 裁掉其余部分 */
       width: 1000px; height: 1000px;
       object-fit: fill;
       pointer-events: none;
@@ -25,7 +25,7 @@
     }
     #bubble {
       position: absolute;
-      top: 6%; left: 50%;
+      top: 4px; left: 50%;
       transform: translateX(-50%);
       background: rgba(12, 18, 32, 0.72);
       color: #cfefff;
@@ -45,6 +45,7 @@
   <div id="stage">
     <video id="v" muted playsinline autoplay></video>
     <div id="bubble"></div>
+    <audio id="music" preload="auto"></audio>
   </div>
   <script src="renderer.js"></script>
 </body>
